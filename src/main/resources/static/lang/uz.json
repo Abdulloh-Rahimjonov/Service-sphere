@@ -1,0 +1,48 @@
+{
+  "page_title": "Service Sphere — Bizning xizmatlarimiz",
+  "name": "Service Sphere",
+
+  "website_title": "Bizning ishlarimiz",
+  "phone_title": "Aloqaga chiqish ☎️",
+  "location_title": "Bizning manzilimiz 📍",
+  "telegram_title": "Telegram",
+  "instagram_title": "Instagram",
+
+  "phone_desc": "Qo‘ng‘iroq qilish uchun bosing",
+  "location_desc": "Xaritada ochish uchun bosing",
+
+  "service_title": "Bizning xizmatlarimiz",
+  "main_services": "Asosiy xizmatlar",
+  "s1": "Muhandislik tizimlariga xizmat ko‘rsatish",
+  "s2": "Ta’mirlash va pardozlash ishlari",
+  "s3": "Shamollatish va konditsioner tizimlari",
+  "s4": "Konditsioner va ventilyatsiya tizimlarini o‘rnatish",
+  "s5": "Gaz qozonxonalariga texnik xizmat ko‘rsatish",
+  "s6": "Energiya tejovchi tizimlar",
+  "s7": "Transformator punktlari va elektr montaj ishlari",
+  "s8": "Suv ta’minoti, oqova va kanalizatsiya tizimlari",
+  "s9": "Issiqlik ta’minoti va isitish tizimlari",
+  "s10": "MTP – markaziy issiqlik punktlari",
+  "s11": "ITP – individual issiqlik punktlari",
+
+  "construction_services": "Qurilish-ta’mirlash ishlari",
+  "c1": "Asfalt-beton qoplamalarini yotqizish",
+  "c2": "Bordiur, lotok o‘rnatish, beton quyish ishlari",
+  "c3": "Yumshoq tom va suv oqizgichlarni o‘rnatish",
+
+  "cleaning_services": "Tozalash xizmati",
+  "cl1": "Ta’mirdan keyingi umumiy tozalash",
+  "cl2": "Ichki binolar va tashqi hududlarni tozalash",
+  "cl3": "Fasadlarni yuvish",
+
+  "landscaping": "Obodonlashtirish",
+  "l1": "Daraxt ekish, gulzor va landshaft dizayni",
+  "l2": "Maysazor o‘rish, butalarni parvarishlash, ortiqcha o‘simliklarni tozalash",
+  "l3": "Daraxtlarni ohaklash va kesish",
+
+  "extra_services": "Qo‘shimcha xizmatlar",
+  "e1": "Mebel buyumlari va alyuminiy romlar tayyorlash",
+  "e2": "Maishiy va qurilish chiqindilarini olib chiqish",
+
+  "footer_text": "© 2025 Service Sphere. Barcha huquqlar himoyalangan."
+}

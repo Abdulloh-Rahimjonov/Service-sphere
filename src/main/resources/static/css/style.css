@@ -1,0 +1,285 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* General Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styles with Background Image and Overlay */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/images/navy-blue-iphone-yzjsghc6werkxnrj.jpg') no-repeat center center/cover;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  animation: pageLoad 1.4s cubic-bezier(0.25, 1, 0.5, 1) 0.3s forwards;
+  will-change: opacity, transform;
+}
+
+/* Dark Overlay for Contrast */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Page Load Animation */
+@keyframes pageLoad {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+    filter: blur(10px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.02);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  width: min(90%, 400px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  will-change: transform, opacity;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.language-selector {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 12px;
+  z-index: 20;
+}
+
+.language-selector a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.language-selector a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Profile Section Styles */
+.profile {
+  margin-bottom: 25px;
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.profile img:hover {
+  transform: scale(1.1);
+}
+
+.profile h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 15px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* Links Section Styles */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center; 
+}
+
+.link-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;        
+  justify-content: center;   
+  text-align: center;
+
+  width: 100%;            
+  max-width: 350px;       
+  min-height: 100px;      
+  
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+  z-index: 15;
+  cursor: pointer;
+  will-change: transform, background, box-shadow;
+}
+
+/* Button Hover Effect */
+.link-btn:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Pulse Animation (Triggered by JavaScript) */
+.link-btn.pulse {
+  animation: glowPulse 0.8s ease;
+}
+
+@keyframes glowPulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 rgba(255, 255, 255, 0.2); }
+  50% { transform: scale(1.05); box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); }
+  100% { transform: scale(1); box-shadow: 0 0 0 rgba(255, 255, 255, 0.2); }
+}
+
+.link-btn .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link-btn .title i {
+  font-size: 16px;
+}
+
+.link-btn .desc {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* Particle Animation for Background */
+.particle {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  animation: float linear infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .profile img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile h1 {
+    font-size: 20px;
+  }
+
+  .link-btn {
+    padding: 15px;
+  }
+
+  .link-btn .title {
+    font-size: 16px;
+  }
+
+  .link-btn .desc {
+    font-size: 12px;
+  }
+
+  .language-selector {
+    top: 15px;
+    right: 15px;
+  }
+
+  .language-selector a {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Neon language buttons (shared) */
+.language-selector {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: flex;
+  gap: 10px;
+  z-index: 30;
+}
+
+.language-selector button,
+.language-selector .lang-btn {
+  background: linear-gradient(90deg, rgba(0,255,255,0.12), rgba(138,43,226,0.12));
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 4px 14px rgba(138,43,226,0.12), 0 0 8px rgba(0,255,255,0.06) inset;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
+}
+
+.language-selector button:hover,
+.language-selector .lang-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 26px rgba(138,43,226,0.3), 0 0 18px rgba(0,255,255,0.18) inset;
+  filter: saturate(1.1);
+}
+
+.language-selector button:active,
+.language-selector .lang-btn:active {
+  transform: translateY(0);
+}
+
+.language-selector button + button,
+.language-selector .lang-btn + .lang-btn {
+  margin-left: 8px;
+}
