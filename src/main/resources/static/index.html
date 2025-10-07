@@ -4,53 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Service Sphere</title>
+  <link rel="icon" href="images/ChatGPT Image 7 окт. 2025 г., 16_58_15.png" type="image/png"> 
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
 <body>
   <div class="language-selector">
-    <button id="langUz">UZ</button>
-    <button id="langRu">RU</button>
+    <button id="langUz" class="lang-btn">🇺🇿 UZ</button>
+    <button id="langRu" class="lang-btn">🇷🇺 RU</button>
   </div>
 
   <div class="container">
     <div class="profile">
-  <img src="images/ChatGPT%20Image%207%20окт.%202025%20г.,%2016_58_15.png" alt="Profile Image">
+      <img src="images/ChatGPT Image 7 окт. 2025 г., 16_58_15.png" alt="Profile Image">
       <h1 data-i18n="name">Service Sphere</h1>
     </div>
 
     <div class="links">
-  <a href="html/service.html" class="link-btn">
+
+      <!-- Xizmatlar -->
+      <a href="html/service.html" class="link-btn">
         <span class="title" data-i18n="website_title">
           <i class="fa-solid fa-screwdriver-wrench"></i> Bizning ishlarimiz
         </span>
+        <span class="desc" data-i18n="website_desc">Ko‘rsatiladigan xizmatlar ro‘yxati</span>
       </a>
 
-  <a href="html/phone.html" class="link-btn">
+      <!-- Aloqa -->
+      <a href="html/phone.html" class="link-btn">
         <span class="title" data-i18n="phone_title">
-          <i class="fa-solid fa-phone-volume"></i> Aloqaga chiqish
+          <i class="fa-solid fa-phone-volume"></i> Aloqaga chiqish 
         </span>
+        <span class="desc" data-i18n="phone_desc">Qo‘ng‘iroq yoki xabar yuboring</span>
       </a>
 
-  <a href="html/location.html" class="link-btn">
+      <!-- Manzil -->
+      <a href="html/location.html" class="link-btn">
         <span class="title" data-i18n="location_title">
-          <i class="fa-solid fa-location-dot"></i> Bizning manzilimiz
+          <i class="fa-solid fa-location-dot"></i> Bizning manzilimiz 
         </span>
+        <span class="desc" data-i18n="location_desc">Xaritadan joylashuvni ko‘ring</span>
       </a>
 
-      <a href="https://t.me/myservicesphere" class="link-btn" data-external="true">
+      <!-- Telegram -->
+      <a href="https://t.me/myservicesphere" target="_blank" class="link-btn" data-external="true">
         <span class="title" data-i18n="telegram_title">
-          <i class="fa-brands fa-telegram"></i> Telegram
+          <i class="fa-brands fa-telegram"></i> Telegram 
         </span>
       </a>
 
-      <a href="https://www.instagram.com/service.sphere" class="link-btn" data-external="true">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/service.sphere" target="_blank" class="link-btn" data-external="true">
         <span class="title" data-i18n="instagram_title">
           <i class="fa-brands fa-instagram"></i> Instagram
         </span>
       </a>
+
     </div>
   </div>
 
